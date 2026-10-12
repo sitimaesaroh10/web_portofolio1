@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;text-decoration:none;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+:root{
+  --main:#ff7a18; /* ORANGE UTAMA */
+  --bg:#fff8f0; 
+  --second:#ffe9d6; 
+  --text:#4a2a1a
+}
+html{font-size:62.5%} body{background:var(--bg);color:var(--text)}
+.header{
+  position:fixed;top:0;left:0;width:100%;padding:1.5rem 5%;
+  background:linear-gradient(90deg,#ff7a18,#ff9f43); /* GRADIEN ORANGE */
+  display:flex;justify-content:space-between;align-items:center;z-index:100
+}
+.logo{font-size:2.2rem;color:white;font-weight:700} .navbar a{font-size:1.6rem;color:white;margin-left:3rem}
+section{min-height:90vh;padding:10rem 9% 2rem}
+.home{display:flex;justify-content:center;align-items:center;gap:6rem}
+.home-img img{
+  width:28vw;height:28vw;object-fit:cover;border-radius:50%;border:6px solid white;
+  box-shadow:0 0 0 8px rgba(255,122,24,0.15),0 0 30px rgba(255,122,24,0.4) /* SHADOW ORANGE */
+}
+.home-content h3{font-size:2.2rem} .home-content h1{font-size:5rem;font-weight:800} .home-content h3 span{color:var(--main)}
+.home-content p{font-size:1.5rem;color:#7a5a4a;margin:1.5rem 0}
+
+/* INI RUMUS ICON YANG PASTI MUNCUL - PAKAI SVG */
+.social-media{display:flex;gap:1rem;margin:1.5rem 0 2.5rem 0}
+.social-media a{
+    width:4.2rem;height:4.2rem;
+    background:white;
+    border:1.8px solid var(--main);
+    border-radius:50%;
+    display:flex;justify-content:center;align-items:center;
+    transition:.3s;
+}
+.social-media a svg{
+    width:2.2rem;height:2.2rem;
+    fill: var(--main); /* WARNA ICON ORANGE */
+}
+.social-media a:hover{
+    background:var(--main);
+    transform:translateY(-3px);
+}
+.social-media a:hover svg{
+    fill:white; /* JADI PUTIH PAS DI HOVER */
+}
+
+.btn{display:inline-block;padding:1.2rem 3rem;background:linear-gradient(90deg,#ff7a18,#ff9f43);border-radius:3rem;color:white;font-size:1.5rem;font-weight:600}
+.about{background:var(--second)} .heading{text-align:center;font-size:3.8rem;margin-bottom:4rem} .heading span{color:var(--main)}
+.about-container{display:flex;justify-content:center;align-items:center;gap:5rem} .about-img img{width:25vw;height:25vw;object-fit:cover;border-radius:50%;border:5px solid white}
+.services-container,.testimonial-container{display:flex;flex-wrap:wrap;gap:2rem;justify-content:center}
+.services-box,.testimonial-box{background:white;padding:3rem;border-radius:2rem;text-align:center;flex:1 1 28rem;box-shadow:0 5px 20px rgba(255,122,24,0.08)}
+.testimonial-box img{width:7rem;height:7rem;border-radius:50%;object-fit:cover}
+.contact form{max-width:60rem;margin:0 auto;text-align:center} .contact form input,.contact form textarea{width:100%;padding:1.5rem;font-size:1.5rem;background:white;border-radius:1.2rem;margin:.7rem 0;border:1px solid #ffcc9e}
+.input-box{display:flex;gap:1rem} .input-box input{width:49%} .contact textarea{height:15rem}
+.footer{text-align:center;padding:2rem;background:linear-gradient(90deg,#ff7a18,#ff9f43);color:white;font-size:1.4rem}
